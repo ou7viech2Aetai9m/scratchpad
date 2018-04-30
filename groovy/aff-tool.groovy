@@ -530,7 +530,7 @@ class AffStoryChapter extends AffStory {
 		return this.documentString
 	}
 	String fileName() {
-		return "${this.memberName} _ ${this.memberId} - ${this.storyName} _ ${this.storyId} - chapter ${this.chapter} - ${this.chapterName}".replaceAll("[/]","_")
+		return "aff - ${this.memberName} _ ${this.memberId} - ${this.storyName} _ ${this.storyId} - chapter ${this.chapter} - ${this.chapterName}".replaceAll("[/]","_")
 	}
 	void fetch() {
 		this.process()
